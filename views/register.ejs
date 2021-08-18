@@ -1,0 +1,32 @@
+<%- include("./partials/header") %>
+    <title>register</title>
+    <link rel="stylesheet" href="../css/login.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="container" id="formContainer">
+                <img id="login-logo" src="../img/Assets/Logo/mybagshop-white.png" alt="image">
+                <form class="form-group" action="/register" method="POST">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" class="form-control" id="username" placeholder="Ex.Mr.abc" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="repassword">Re-Enter Password</label>
+                        <input type="password" name="repassword" class="form-control" id="repassword" placeholder="Password" required>
+                    </div>
+                    <div>
+                        <button type="submit">Register</button>
+                    </div>
+                </form>
+                <p class="goto-reg">Already have an account? <a href="/login">Go Back to login</a></p>
+            </div>
+        </div>
+
+        <%- include("./partials/footer") %>

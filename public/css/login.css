@@ -1,0 +1,72 @@
+body {
+    background-image: url('../img/Assets/background-images/login_register.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label {
+    color: #383838
+}
+
+button {
+    background-color: #237DB6;
+    color: white;
+    letter-spacing: .5px;
+    font-size: 23px;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+form {
+    padding: 10px
+}
+
+#login-logo {
+    top: 100px;
+    left: 690px;
+    width: 300px;
+    height: 222px;
+    background: transparent url('img/mybagshop-white.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.form-inline {
+    margin: 0 auto;
+    display: table;
+}
+
+.form-control {
+    padding: 30px 45px;
+    margin: 8px 0;
+    width: 40%;
+    font-size: 20px;
+    border-radius: 15px 15px 0px 0px;
+    letter-spacing: 0.2px;
+}
+
+.goto-reg {
+    font-size: 17px;
+}
+
+.form-rounded {
+    border-radius: rem;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+#formContainer {
+    background-color: transparent;
+}

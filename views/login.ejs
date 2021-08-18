@@ -1,0 +1,30 @@
+<%- include("./partials/header") %>
+    <title>login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="container" id="formContainer"><img id="login-logo" src="../img/Assets/Logo/mybagshop-white.png" alt="image">
+                <form class="form-group" action="/login" method="POST">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" class="form-control" id="username" placeholder="Ex:Mr.abc" required>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
+                    </div>
+                    <div>
+                        <button type="submit">login</button>
+                    </div>
+                </form>
+                <div>
+                    <p class="goto-reg">New to MyBag.shop? <a href="/register">Register</a></p>
+                </div>
+            </div>
+
+        </div>
+
+        <%- include("./partials/footer") %>

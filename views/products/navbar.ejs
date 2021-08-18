@@ -1,0 +1,72 @@
+<style type="text/css">
+    body#right-sidebar {
+        margin: 0;
+        padding: 0 10px 0 0;
+    }
+    
+    .nav-item {
+        text-align: left;
+    }
+    
+    .nav-link {
+        text-align: left;
+        display: block;
+        padding: 5px;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    
+    .btn {
+        color: white;
+        font-size: 30px;
+    }
+    
+    nav#right-sidebar {
+        align-items: center;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20%;
+        color: white;
+    }
+    
+    nav li {
+        list-style: none;
+    }
+    
+    @media screen {
+        body>div#right-sidebar {
+            position: relative;
+        }
+    }
+    
+    * html body {
+        overflow: hidden;
+    }
+</style>
+<nav id="right-sidebar">
+    <div class="container">
+        <ul>
+            <li class="nav-item">
+                <a href="/logout" class="btn col-6">Logout</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/products">Home</a>
+            </li>
+            <% if(loggedInUser.role!="user") {%>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/products/new">Add Item</a>
+                </li>
+                <%}else {%>
+                    <li class="cart">
+                        <a class="nav-link cart" href="/products/cart">
+                            <ion-icon name="basket-outline"></ion-icon>
+                            My Cart <sup><span>0</span></sup>
+                        </a>
+                    </li>
+                    <%} %>
+
+        </ul>
+    </div>
+</nav>

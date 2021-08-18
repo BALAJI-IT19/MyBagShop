@@ -1,0 +1,52 @@
+<%- include("./header.ejs") %>
+    <title>new</title>
+    <link rel="stylesheet" href="../css/product.css">
+    </head>
+
+
+    <form class="container form-group mt-3" action="/products" method="POST">
+        <h3>ADD ITEM</h3>
+        <div class=" mb-3"><label for="name">Name</label><br>
+            <input class="form-control" type="text" name="name" id="name" placeholder="Enter Item Name" required>
+        </div>
+        <div class="mb-3"><label for="manufacturer">Manufacturer</label><br>
+            <input class="form-control" type="text" name="manufacturer" id="manufacturer" placeholder="Enter Manufacturer Name" required>
+        </div>
+        <div class="d-grid gap-2 d-md-block">
+            <label for="category">Select category</label>
+            <select class="col-2 dropdown-roundedtop" name="category" id="category">
+                <% for (let category of categories){ %>
+                    <option value="<%= category %>">
+                        <%= category %>
+                    </option>
+                    <% } %>
+            </select>
+
+            <label for="rating">Rating</label>
+            <select class="col-2  dropdown-roundedtop" name="rating" id="rating">
+                <% for (let rating of ratings){ %>
+                    <option value="<%= rating %>">
+                        <%= rating %>
+                    </option>
+                    <% } %>
+            </select>
+
+            <label for="price">Price</label>
+            <input class="col-2 dropdown-roundedtop " type="number" min=0 name="price" id="price" placeholder="10" required>
+
+        </div>
+        <div>
+            <label for="imgURL">Image URL</label>
+            <input class="mt-3 col-8 form-control" type="text" name="imgURL" id="imgURL" placeholder="Enter Image URL" required>
+        </div>
+        <div>
+            <label for="about">About</label><br>
+            <textarea class="form-control-about" id="about" name="about" rows="4" cols="110" placeholder="About Item" required></textarea>
+        </div>
+        <div class="d-grid gap-2 d-md-block mt-5">
+            <button class="col-2 btn-primary" type="submit">ADD</button>
+            <a href="/products" class="col-2 btn btn-dark rounded-pill" role="button">CANCEL</a>
+        </div>
+    </form>
+
+    <%- include("./footer.ejs") %>

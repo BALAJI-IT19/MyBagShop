@@ -1,0 +1,147 @@
+sup span {
+    color: darkorange;
+    text-align: end;
+}
+
+body {
+    background-image: url('../img/Assets/background-images/consumer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    border-radius: 0 25px 0 0;
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+h3 {
+    color: white;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    border: 15px solid transparent;
+    background-color: transparent;
+}
+
+.total {
+    background: #237DB6 0% 0% no-repeat padding-box;
+    opacity: 0.75;
+    border-radius: 0 15px 0 0;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 0);
+}
+
+.card-img {
+    border-radius: 0 25px 0 0;
+}
+
+.card-text {
+    text-transform: capitalize;
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.card-title {
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-img-logo {
+    width: 25px;
+    height: 25px;
+}
+
+#user-name {
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.add-cart {
+    position: absolute;
+    width: 100%;
+    background-color: darkgray;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.image button {
+    bottom: 20px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: grey;
+    border-radius: 25px;
+}
+
+
+/* *************************** cart-page ***************************** */
+
+.products-container ion-icon {
+    font-size: 25px;
+    color: blue;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.product-header {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 10px solid transparent;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+}
+
+.products {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 10px solid transparent;
+}
+
+.price {
+    width: 40%;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    color: rgb(255, 255, 0);
+    opacity: 0.75;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+}
+
+img {
+    padding: 10px;
+    width: 200px;
+    height: 250px;
+    border-radius: 0 25px 0 0;
+}
+
+.products-container {
+    border-radius: 0 25px 0 0;
+    padding: 30px;
+    width: 75%;
+    background-color: rgba(0, 0, 0, 0.493);
+}
